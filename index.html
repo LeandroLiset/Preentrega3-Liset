@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1>Calculadora interactiva</h1>
+    <p> El proyecto consiste en la creación de una calculadora que arroje el resultado de
+        una operación entre 2 números. A su vez, luego de finalizada la operación, me pregunte si quiero volver a operar
+        sobre el resultado de la primer operación. </p>
+    <p>Las nuevas funcionalidades que agregue para la segunda preentrega con arrays es la búsqueda del número máximo y
+        número mínimo en todas las operaciones realizadas y a su vez, que el programa me entregue un número aleatorio
+        entre el máximo y el mínimo.</p>
+    <p>Para esta última preentrega le sume el localstorage, utilice ternario para simplificar la función. También hice
+        que los resultados de las cuentas las devuelva en el html así me desprendo del uso del prompt.
+    </p>
+    <p>También puse un boton para limpiar el storage y la posibilidad de ver el storage en el html.</p>
+    <p>Por último agregue un botón para poder seguir operando con el resultado anterior de ser deseado, sino podemos operar con nuevos números</p>
+
+    <div>
+        <label for="operador">Operador (+, -, *, /):</label>
+        <input type="text" id="operador">
+    </div>
+    <div>
+        <label for="numero1">Primer número:</label>
+        <input type="number" id="numero1">
+    </div>
+    <div id="adicionalNumeroDiv">
+        <label for="numero2">Segundo número:</label>
+        <input type="number" id="numero2">
+    </div>
+    <div>
+        <label for="usarResultadoAnterior">Usar resultado anterior:</label>
+        <input type="checkbox" id="usarResultadoAnterior">
+    </div>
+    <br>
+    <button id="calcularBtn">INICIAR CÁLCULO</button>
+    <h2>Resultado:</h2>
+    <div id="resultado"></div>
+
+    <button id="clearLocalStorage">Limpiar Local Storage</button>
+    <h2>Números Guardados:</h2>
+    <ul id="numerosGuardados"></ul>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
